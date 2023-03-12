@@ -48,19 +48,21 @@ img {
   transition: all 1s ease;
 }
 
-label:hover img { 
-  width: 16rem;
-  height: 16rem;
-  transform: scale(0.9);
+@media (hover: hover) {
+  label:hover img {
+    width: 16rem;
+    height: 16rem;
+    transform: scale(0.9);
+  }
 }
 
-input:checked + label img {
+input:checked+label img {
   width: 17rem;
   height: 17rem;
   transform: scale(1);
 }
 
-input:checked + label img:hover {
+input:checked+label img:hover {
   transform: scale(1.05);
 }
 
@@ -81,15 +83,17 @@ input:checked + label img:hover {
   transform: rotate(45deg);
 }
 
-input:checked + label .plus-cross {
+input:checked+label .plus-cross {
   transform: rotate(45deg);
 }
 
-label:hover .plus-cross {
-  transform: rotate(45deg);
+@media (hover: hover) {
+  label:hover .plus-cross {
+    transform: rotate(45deg);
+  }
 }
 
-.accordion:hover .plus-cross{
+.accordion:hover .plus-cross {
   opacity: 1;
 }
 
@@ -98,22 +102,24 @@ label:hover .plus-cross {
   color: rgb(84, 80, 80);
 }
 
-input:checked + label .meme-heading {
+input:checked+label .meme-heading {
   color: black;
 }
 
-.accordion:hover .meme-heading {
-  color: black;
+@media (hover: hover) {
+  .accordion:hover .meme-heading {
+    color: black;
+  }
 }
 
-.accordion-item:active .meme-heading{
+.accordion-item:active .meme-heading {
   opacity: 0.6;
 }
 
-.accordion-item:active img{
+.accordion-item:active img {
   opacity: 0.6;
 }
 
-.accordion-item:active svg{
+.accordion-item:active svg {
   opacity: 0.6;
 }
