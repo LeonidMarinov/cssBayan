@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+input {
+  display: none;
+}
+
+.accordion {
+  width: 60%;
+  background-color: aqua;
+  padding: 1em;
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.meme-heading {
+  font-size: 24px;
+}
