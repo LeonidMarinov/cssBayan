@@ -22,6 +22,31 @@ label {
   cursor: pointer;
 }
 
+img {
+  align-self: center;
+  width: 0rem;
+  height: 0rem;
+  cursor: pointer;
+  transform: scale(0);
+  transition: all 1s ease;
+}
+
+label:hover img { 
+  width: 16rem;
+  height: 16rem;
+  transform: scale(0.9);
+}
+
+input:checked + label img {
+  width: 17rem;
+  height: 17rem;
+  transform: scale(1);
+}
+
+input:checked + label img:hover {
+  transform: scale(1.05);
+}
+
 .meme-heading {
   font-size: 24px;
 }
