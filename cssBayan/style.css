@@ -1,3 +1,21 @@
+@media (max-width: 1920px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -12,8 +30,7 @@ input {
 .accordion {
   width: 60%;
   background-color: aqua;
-  padding: 1em;
-  cursor: pointer;
+  padding: 1rem;
 }
 
 label {
@@ -89,10 +106,3 @@ input:checked + label .meme-heading {
   color: black;
 }
 
-label:active {
-  color: blue;
-}
-
-.helper:active .meme-heading{
-  color: blue;
-}
