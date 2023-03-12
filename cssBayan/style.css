@@ -106,3 +106,14 @@ input:checked + label .meme-heading {
   color: black;
 }
 
+.accordion-item:active .meme-heading{
+  opacity: 0.6;
+}
+
+.accordion-item:active img{
+  opacity: 0.6;
+}
+
+.accordion-item:active svg{
+  opacity: 0.6;
+}
