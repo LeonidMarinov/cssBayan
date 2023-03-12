@@ -47,10 +47,6 @@ input:checked + label img:hover {
   transform: scale(1.05);
 }
 
-.meme-heading {
-  font-size: 24px;
-}
-
 .label-content {
   display: flex;
   align-items: center;
@@ -78,4 +74,25 @@ label:hover .plus-cross {
 
 .accordion:hover .plus-cross{
   opacity: 1;
+}
+
+.meme-heading {
+  font-size: 1.5rem;
+  color: rgb(84, 80, 80);
+}
+
+input:checked + label .meme-heading {
+  color: black;
+}
+
+.accordion:hover .meme-heading {
+  color: black;
+}
+
+label:active {
+  color: blue;
+}
+
+.helper:active .meme-heading{
+  color: blue;
 }
