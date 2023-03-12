@@ -50,3 +50,32 @@ input:checked + label img:hover {
 .meme-heading {
   font-size: 24px;
 }
+
+.label-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plus-cross {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.6s ease;
+}
+
+.plus-cross:hover {
+  transform: rotate(45deg);
+}
+
+input:checked + label .plus-cross {
+  transform: rotate(45deg);
+}
+
+label:hover .plus-cross {
+  transform: rotate(45deg);
+}
+
+.accordion:hover .plus-cross{
+  opacity: 1;
+}
